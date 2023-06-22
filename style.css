@@ -1,0 +1,229 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: #004474;
+}
+
+#header {
+    background-image: url(header_background_image.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Michroma', sans-serif;
+}
+
+#header p {
+    text-align: center;
+    width: 60%;
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+#content {
+    padding: 25px;
+    background: linear-gradient(#00b9ff, #00ffe0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+#instructions {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#array {
+    margin: 0;
+    background-color: transparent;
+    max-width: 200px;
+    overflow-x: auto;
+}
+
+input, button {
+    width: 200px;
+    margin-top: 10px;
+    line-height: 2;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007acf;
+    border-radius: 10px;
+    color: white;
+    border: solid white;
+}
+
+button:disabled {
+    background-color: #9eb8c8;
+    pointer-events: none;
+}
+
+button:hover {
+    background-color: #004474;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 20px;
+}
+
+.term:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #004474;
+}
+
+.value {
+    text-align: right;
+}
+
+#footer {
+    padding: 25px;
+    font-family: 'Questrial', sans-serif;
+}
+
+#footer h3, #footer p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#footer p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+#explanation-popup, #add-int-popup, #delete-int-popup {
+    background-color: #9eb8c8;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+
+#explanation-popup p {
+    margin: 0px 0px 20px 0px;
+}
+
+#add-int-popup p, #delete-int-popup p {
+    margin: 0;
+}
+
+#add-int-input {
+    border: 1px solid gray;
+}
+
+#explanation-popup.active, #add-int-popup.active, #delete-int-popup.active {
+    visibility: visible;
+}
+
+#darkener {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    pointer-events: none;
+}
+
+#darkener.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (min-width: 650px) {
+    table {
+        width: 60%;
+    }
+
+    #footer {
+        padding: 25px 75px 25px 75px;
+    }
+}
+
+@media (min-width: 880px) {
+    #footer {
+        padding: 25px 125px 25px 125px;
+    }
+}
+
+@media (min-width: 940px) {
+    #footer {
+        padding: 25px 200px 25px 200px;
+    }
+}
+
+@media (min-width: 1080px) {
+    #footer {
+        padding: 25px 250px 25px 250px;
+    }
+
+    #explanation-popup, #add-int-popup, #delete-int-popup {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1120px) {
+    #header p {
+        width: 25%;
+    }
+
+    table {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1170px) {
+    #footer {
+        padding: 25px 300px 25px 300px;
+    }
+}
+
+@media (min-width: 1350px) {
+    #footer {
+        padding: 25px 350px 25px 350px;
+    }
+}
+
+@media (min-width: 1450px) {
+    #footer {
+        padding: 25px 450px 25px 450px;
+    }
+
+    #explanation-popup, #add-int-popup, #delete-int-popup {
+        width: 20%;
+    }
+}

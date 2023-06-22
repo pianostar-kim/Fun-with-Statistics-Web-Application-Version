@@ -1,0 +1,50 @@
+ <html>
+    <head>
+        <title>Fun with Statistics</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="functionality.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="explanation-popup">
+            <p id="explanation">Explanation here.</p>
+            <button onClick="closeExplanationPopup()">Close</button>
+        </div>
+        <div id="add-int-popup">
+            <p>Enter the integer you would like to add. The integer you enter will get added at the end of the array.</p>
+            <input id="add-int-input" type="number" placeholder="Enter the integer here.">
+            <button id="add-int-ok-button" onClick="addInteger()">OK</button>
+            <button id="add-int-cancel-button" onClick="closeAddIntPopup()">Cancel</button>
+        </div>
+        <div id="delete-int-popup">
+            <p>Enter the integer you would like to delete. The first occurrence of the integer you enter will get deleted.</p>
+            <input id="delete-int-input" type="number" placeholder="Enter the integer here.">
+            <button id="delete-int-ok-button" onClick="deleteInteger()">OK</button>
+            <button id="delete-int-cancel-button" onClick="closeDeleteIntPopup()">Cancel</button>
+        </div>
+        <div id="darkener"></div>
+        <div id="header">
+            <h2>Fun with Statistics</h2>
+            <p>Here, you will learn about various types of statistics. You will enter your own set of numbers from which statistics
+                such as the mean, the median, and the standard deviation are calculated, and you will get to see those results.
+                I hope that this provides you an enjoyable way of learning statistics!</p>
+        </div>
+        <div id="content">
+            <p id="instructions">To get started, enter an integer to insert into an array of integers.</p>
+            <p id="array">[]</p>
+            <input id="main-input" type="number" placeholder="Enter an integer here.">
+            <button id="insert-button" onClick="insertNumber()">Insert</button>
+            <button disabled id="calculate-button" onClick="showResults()">Calculate!</button>
+        </div>
+        <div id="footer">
+            <h3>More info</h3>
+            <p>This web application was made solely for personal purposes; no profit is intended to be made off it.</p>
+            <p>Source of header background image: https://www.competitionsciences.org/2020/10/29/statistics-education-resources-for-teachers-and-students-from-the-asa/.
+                (NOTE: Original image was made more transparent so that the header text could be readable.)</p>
+            <p>For issues or concerns regarding this web application, please reach out at pianostar.kim@gmail.com.</p>
+        </div>
+    </body>
+</html>
